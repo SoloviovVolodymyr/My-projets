@@ -1,4 +1,4 @@
-.centered, footer{
+p, footer{
   font-size: 2em;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
@@ -49,70 +49,113 @@ nav a:hover {
   font-size: 15px;
 }
 
-
 .primoNotizie {
   position: relative;
   text-align: center;
+  left: 23%;
+  width: 50em;
+  height: 6em;
 }
 
 .primoNotizie img {
-  width: 50em;
-  height: 6em;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   border-style: solid;
   border-width: 0.15em;
   border-color: black;
   opacity: 45%;
   box-shadow: 0 0.3em 2em;
-  transition: 0.2s;
+  transition: 0.4s;
 }
-
-.primoNotizie:hover img {
-  box-shadow: none;
-  transform: scale(0.95); /* Зменшення зображення */
-}
-
-.primoNotizie:hover .centered {
-  transform: translate(-50%, -50%) scale(0.95); /* Зменшення тексту */
-}
-
-.centered {
+.primoNotizie p{
   padding: 0.5em;
   position: absolute;
-  top: 45%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   white-space: nowrap;
-  transition: 0.2s;
+  transition: 0.7s;
   pointer-events: none;
+}
+.primoNotizie:hover img {
+  box-shadow: none;
+  transform: scale(0.95); /* Зменшення зображення */
+}
+.primoNotizie:hover p{
+  transform: translate(-50%, -50%) scale(0.95); /* Зменшення тексту */
 }
 
 .secondoTerzoNotizie {
+  position: relative;
+  text-align: center;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 1em;
+  margin: 1em 0 1em 0;
 }
-
-.secondoTerzoNotizie img{
-  margin-top: 0.5em;
+.secondoTerzoNotizie div{
+  object-fit: cover;
   width: 35em;
   height: 6em;
+}
+.secondoNotizie img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 45%;
   border-style: solid;
   border-width: 0.15em;
-  opacity: 45%;
+  border-color: black;
+  box-shadow: 0 0.3em 2em;
+  transition: 0.4s;
 }
-
-.centered2 {
-  font-size: 1.5em;
-  top: 55%;
-  left: 50%;
-}
-
-.centered3 {
+.secondoNotizie p{
+  top: 1.3em;
+  left: 25%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  white-space: nowrap;
+  pointer-events: none;
   font-size: 1.3em;
-  top: 58%;
-  left: 50%;
+  transition: 0.7s;
+}
+.terzoNotizie img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 45%;
+  border-style: solid;
+  border-width: 0.15em;
+  
+  box-shadow: 0 0.3em 2em;
+  transition: 0.4s;
+}
+.terzoNotizie p{
+  top: 1.5em;
+  left: 75%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  white-space: nowrap;
+  pointer-events: none;
+  font-size: 1.2em;
+  transition: 0.7s;
+}
+.secondoNotizie:hover img{
+  box-shadow: none;
+  transform: scale(0.95); /* Зменшення зображення */
+}
+.secondoNotizie:hover p{
+  transform: translate(-50%, -50%) scale(0.95); /* Зменшення тексту */
+}
+.terzoNotizie:hover img {
+  box-shadow: none;
+  transform: scale(0.95); /* Зменшення зображення */
+}
+.terzoNotizie:hover p{
+  transform: translate(-50%, -50%) scale(0.95); /* Зменшення тексту */
 }
 
 .weekendMatch {
@@ -125,12 +168,14 @@ nav a:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 1em;
-  transition: 1s;
   font-size: 1.5em;
 }
-
+.weekendMatchI a {
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+}
 .weekendMatch a:hover {
-  transform: scale(0.95);
+  transform: scale(1.5);
 }
 
 footer {
