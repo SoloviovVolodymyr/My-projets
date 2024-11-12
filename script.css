@@ -22,7 +22,7 @@ header {
   padding: 2em;
   display: flex;
   justify-content: space-around;
-  background-color: cadetblue;
+  background-color: rgba(33, 125, 153, 1);
 }
 
 a {
